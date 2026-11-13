@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Debug Typer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Консоль отладки</h1>
+        <p class="subtitle">Исправляй ошибки, пока препод не видит. Нажимай только правильную клавишу.</p>
+
+        <div class="game-area">
+            <div class="console">
+                <div class="log-line">[INFO] Компиляция проекта...</div>
+                <div class="log-line">[INFO] Сборка завершена.</div>
+                <div id="error-line" class="error-line">SyntaxError: unexpected token '<'</div>
+            </div>
+
+            <div class="keyboard">
+                <button data-key="<">&lt;</button>
+                <button data-key=">">&gt;</button>
+                <button data-key=";">;</button>
+                <button data-key=":">:</button>
+                <button data-key="(">(</button>
+                <button data-key=")">)</button>
+                <button data-key="{">{</button>
+                <button data-key="}">}</button>
+                <button data-key="[">[</button>
+                <button data-key="]">]</button>
+                <button data-key="=">=</button>
+                <button data-key="&">&amp;</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <span>Счет: <span id="score">0</span></span>
+            <span>Уровень: <span id="level">1</span></span>
+            <span>Ошибок: <span id="misses">0</span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
